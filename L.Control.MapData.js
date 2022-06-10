@@ -6,17 +6,13 @@ L.Control.MapData = L.Control.extend({
 
     onAdd: function (map) {
         map.on('move', function(e) {
-            this._onMapMoved (map)
+            map.getCenter()
         });
     },
 
     onRemove: function (map) {
         map.off('move', this._onMapMoved);
     },
-
-    _onMapMoved: function (map) {
-        alert(map.getCenter());
-    }
 });
 
 L.control.mapData = function (options) {
