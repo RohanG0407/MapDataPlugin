@@ -6,7 +6,7 @@ L.Control.MapData = L.Control.extend({
 
     onAdd: function (map) {
         map.on('move', function(e) {
-            alert(map.getCenter())
+            this.currentCenter = map.getCenter()
         });
     }
 });
