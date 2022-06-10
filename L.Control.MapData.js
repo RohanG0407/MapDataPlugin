@@ -9,10 +9,6 @@ L.Control.MapData = L.Control.extend({
             map.getCenter()
         });
     },
-
-    onRemove: function (map) {
-        map.off('move', this._onMapMoved);
-    },
 });
 
 L.control.mapData = function (options) {
