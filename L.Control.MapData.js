@@ -4,11 +4,11 @@ L.Control.MapData = L.Control.extend({
         currentZoom: 0
     },
 
-    onAdd: function (map) {
-        map.on('move', function(e) {
-            map.getCenter()
-        });
-    },
+    // onAdd: function (map) {
+    //     map.on('move', function(e) {
+    //         map.getCenter()
+    //     });
+    // }
 });
 
 L.control.mapData = function (options) {
